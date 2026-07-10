@@ -24,7 +24,7 @@
                 </h1>
 
                 <!-- Links -->
-                <div class="hidden md:flex items-center gap-10 text-lg">
+                <div id="menu" class="hidden md:flex items-center gap-10 text-lg">
                     <a href="home" class="hover:text-cyan-400 transition">Home</a>
                     <a href="#service" class="hover:text-cyan-400 transition">service</a>
                     <a href="#why" class="hover:text-cyan-400 transition">About us</a>
@@ -43,7 +43,7 @@
 
         <!-- Hero Section -->
         <section
-            class="max-w-7xl mx-auto min-h-[90vh] flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12">
+            class="max-w-7xl mx-auto min-h-[90vh] mt-12  flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12">
 
             <!-- Left Content -->
             <div class="lg:w-1/2 space-y-6">
@@ -56,7 +56,7 @@
                     Transform Your
                     <span class="text-red-500">Body</span><br>
                     Build Your
-                    <span class="text-cyan-400">Confidence</span>
+                    <span id="confidence" class="text-cyan-400">Confidence</span>
                 </h1>
 
                 <p class="text-gray-300 text-lg leading-8 max-w-xl">
@@ -104,14 +104,47 @@
             </div>
 
             <!-- Right Image -->
-            <div class="lg:w-1/2 flex justify-center mb-12 lg:mb-0">
+           <div class="w-full lg:w-1/2 flex justify-center items-center">
 
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700" alt="Gym"
-                    class="w-full max-w-lg rounded-3xl object-cover shadow-2xl">
+    <!-- Visible Area -->
+    <div
+      id="slidebox"
+      class="w-full max-w-md h-[450px] lg:h-[600px] overflow-hidden rounded-3xl">
 
-            </div>
+      <!-- GSAP will animate this -->
+      <div id="slides" class="flex flex-col">
+
+        <img
+          class="slide w-full h-[450px] lg:h-[600px] object-cover flex-shrink-0"
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700"
+          alt="Gym">
+
+        <img
+          class="slide w-full h-[450px] lg:h-[600px] object-cover flex-shrink-0"
+          src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=700"
+          alt="Gym">
+
+        <img
+          class="slide w-full h-[450px] lg:h-[600px] object-cover flex-shrink-0"
+          src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=700"
+          alt="Gym">
+
+        <img
+          class="slide w-full h-[450px] lg:h-[600px] object-cover flex-shrink-0"
+          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700"
+          alt="Gym">
+
+      </div>
+
+    </div>
+
+  </div>
+                
 
         </section>
+        
+    
+ 
 
         <section id="service" class="py-16 bg-black text-white">
 
@@ -240,408 +273,419 @@
         </section>
 
 
-      
-<section id="why" class="bg-black text-white py-20">
 
-    <div class="max-w-7xl mx-auto px-6">
+        <section id="why" class="bg-black text-white py-20">
 
-        <!-- Section Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-            Why <span class="text-cyan-400">Choose Us?</span>
-        </h2>
+            <div class="max-w-7xl mx-auto px-6">
 
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-
-            <!-- Left Image -->
-            <div class="w-full lg:w-1/2">
-
-                <img
-                    src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900"
-                    alt="Gym Training"
-                    class="w-full h-[350px] md:h-[500px] object-cover rounded-3xl shadow-2xl">
-
-            </div>
-
-            <!-- Right Content -->
-            <div class="w-full lg:w-1/2">
-
-                <h3 class="text-3xl md:text-5xl font-bold leading-tight">
-                    Transform Your Fitness
-                    <span class="text-cyan-400">Journey</span>
-                    With Experts
-                </h3>
-
-                <p class="text-gray-300 mt-6 leading-8 text-lg">
-                    At Royal Gym Fitness, we provide professional trainers,
-                    modern equipment, and personalized workout plans to help
-                    you achieve your fitness goals faster and safely.
-                </p>
-
-                <!-- Features -->
-                <div class="mt-8 space-y-5">
-
-                    <div class="flex items-start gap-4">
-                        <span class="text-cyan-400 text-2xl">✔</span>
-                        <div>
-                            <h4 class="text-xl font-semibold">
-                                Certified Trainers
-                            </h4>
-                            <p class="text-gray-400">
-                                Experienced coaches to guide every workout.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <span class="text-cyan-400 text-2xl">✔</span>
-                        <div>
-                            <h4 class="text-xl font-semibold">
-                                Modern Equipment
-                            </h4>
-                            <p class="text-gray-400">
-                                Premium machines for strength and cardio training.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <span class="text-cyan-400 text-2xl">✔</span>
-                        <div>
-                            <h4 class="text-xl font-semibold">
-                                Flexible Membership
-                            </h4>
-                            <p class="text-gray-400">
-                                Affordable plans designed for everyone.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <span class="text-cyan-400 text-2xl">✔</span>
-                        <div>
-                            <h4 class="text-xl font-semibold">
-                                Friendly Community
-                            </h4>
-                            <p class="text-gray-400">
-                                Stay motivated with a supportive fitness environment.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Button -->
-                <button
-                    class="mt-10 bg-red-600 hover:bg-red-700 transition px-8 py-4 rounded-full font-semibold hover:scale-105">
-                    Book a Free Class
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-    <section id="plan" class="bg-black text-white py-20">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-            Our <span class="text-cyan-400">Plans</span>
-        </h2>
-
-        <!-- Pricing Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Basic -->
-            <div class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300">
-
-                <h3 class="text-3xl font-bold text-center">
-                    Basic
-                </h3>
-
-                <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
-                    ₹999
+                <!-- Section Heading -->
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                    Why <span class="text-cyan-400">Choose Us?</span>
                 </h2>
 
-                <p class="text-center text-gray-400 mb-8">
-                    Per Month
-                </p>
+                <div class="flex flex-col lg:flex-row items-center gap-12">
 
-                <ul class="space-y-4 text-gray-300">
+                    <!-- Left Image -->
+                    <div class="w-full lg:w-1/2">
 
-                    <li>✔ Gym Access</li>
-                    <li>✔ Cardio Equipment</li>
-                    <li>✔ Locker Facility</li>
-                    <li>✔ Free Water</li>
+                        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=900" alt="Gym Training"
+                            class="w-full h-[350px] md:h-[500px] object-cover rounded-3xl shadow-2xl">
 
-                </ul>
+                    </div>
 
-                <button
-                    class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+                    <!-- Right Content -->
+                    <div class="w-full lg:w-1/2">
 
-                    Join Now
-                    <span>→</span>
+                        <h3 class="text-3xl md:text-5xl font-bold leading-tight">
+                            Transform Your Fitness
+                            <span class="text-cyan-400">Journey</span>
+                            With Experts
+                        </h3>
 
-                </button>
+                        <p class="text-gray-300 mt-6 leading-8 text-lg">
+                            At Royal Gym Fitness, we provide professional trainers,
+                            modern equipment, and personalized workout plans to help
+                            you achieve your fitness goals faster and safely.
+                        </p>
+
+                        <!-- Features -->
+                        <div class="mt-8 space-y-5">
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-cyan-400 text-2xl">✔</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold">
+                                        Certified Trainers
+                                    </h4>
+                                    <p class="text-gray-400">
+                                        Experienced coaches to guide every workout.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-cyan-400 text-2xl">✔</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold">
+                                        Modern Equipment
+                                    </h4>
+                                    <p class="text-gray-400">
+                                        Premium machines for strength and cardio training.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-cyan-400 text-2xl">✔</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold">
+                                        Flexible Membership
+                                    </h4>
+                                    <p class="text-gray-400">
+                                        Affordable plans designed for everyone.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-cyan-400 text-2xl">✔</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold">
+                                        Friendly Community
+                                    </h4>
+                                    <p class="text-gray-400">
+                                        Stay motivated with a supportive fitness environment.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Button -->
+                        <button
+                            class="mt-10 bg-red-600 hover:bg-red-700 transition px-8 py-4 rounded-full font-semibold hover:scale-105">
+                            Book a Free Class
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <!-- Pro -->
-            <div class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300 relative">
+        </section>
+        <section id="plan" class="bg-black text-white py-20">
 
-                <span class="absolute top-4 right-4 bg-cyan-400 text-black px-3 py-1 rounded-full text-sm font-bold">
-                    Popular
-                </span>
+            <div class="max-w-7xl mx-auto px-6">
 
-                <h3 class="text-3xl font-bold text-center">
-                    Pro
-                </h3>
-
-                <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
-                    ₹1,999
+                <!-- Heading -->
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                    Our <span class="text-cyan-400">Plans</span>
                 </h2>
 
-                <p class="text-center text-gray-400 mb-8">
-                    Per Month
-                </p>
+                <!-- Pricing Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <ul class="space-y-4 text-gray-300">
+                    <!-- Basic -->
+                    <div
+                        class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300">
 
-                    <li>✔ Everything in Basic</li>
-                    <li>✔ Personal Trainer</li>
-                    <li>✔ Diet Plan</li>
-                    <li>✔ Group Classes</li>
-                    <li>✔ Steam Bath</li>
+                        <h3 class="text-3xl font-bold text-center">
+                            Basic
+                        </h3>
 
-                </ul>
+                        <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
+                            ₹999
+                        </h2>
 
-                <button
-                    class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+                        <p class="text-center text-gray-400 mb-8">
+                            Per Month
+                        </p>
 
-                    Join Now
-                    <span>→</span>
+                        <ul class="space-y-4 text-gray-300">
 
-                </button>
+                            <li>✔ Gym Access</li>
+                            <li>✔ Cardio Equipment</li>
+                            <li>✔ Locker Facility</li>
+                            <li>✔ Free Water</li>
+
+                        </ul>
+
+                        <button
+                            class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+
+                            Join Now
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+                    <!-- Pro -->
+                    <div
+                        class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300 relative">
+
+                        <span
+                            class="absolute top-4 right-4 bg-cyan-400 text-black px-3 py-1 rounded-full text-sm font-bold">
+                            Popular
+                        </span>
+
+                        <h3 class="text-3xl font-bold text-center">
+                            Pro
+                        </h3>
+
+                        <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
+                            ₹1,999
+                        </h2>
+
+                        <p class="text-center text-gray-400 mb-8">
+                            Per Month
+                        </p>
+
+                        <ul class="space-y-4 text-gray-300">
+
+                            <li>✔ Everything in Basic</li>
+                            <li>✔ Personal Trainer</li>
+                            <li>✔ Diet Plan</li>
+                            <li>✔ Group Classes</li>
+                            <li>✔ Steam Bath</li>
+
+                        </ul>
+
+                        <button
+                            class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+
+                            Join Now
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+                    <!-- Premium -->
+                    <div
+                        class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300">
+
+                        <h3 class="text-3xl font-bold text-center">
+                            Premium
+                        </h3>
+
+                        <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
+                            ₹2,999
+                        </h2>
+
+                        <p class="text-center text-gray-400 mb-8">
+                            Per Month
+                        </p>
+
+                        <ul class="space-y-4 text-gray-300">
+
+                            <li>✔ Everything in Pro</li>
+                            <li>✔ Unlimited Classes</li>
+                            <li>✔ 24×7 Gym Access</li>
+                            <li>✔ Body Composition Analysis</li>
+                            <li>✔ VIP Support</li>
+                            <li>✔ Supplement Guidance</li>
+
+                        </ul>
+
+                        <button
+                            class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+
+                            Join Now
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <!-- Premium -->
-            <div class="border-2 border-cyan-400 rounded-3xl p-8 bg-zinc-900 hover:scale-105 transition duration-300">
+        </section>
+        <!-- Reviews Section -->
+        <section class="bg-black text-white py-20">
 
-                <h3 class="text-3xl font-bold text-center">
-                    Premium
-                </h3>
+            <div class="max-w-7xl mx-auto px-6">
 
-                <h2 class="text-5xl font-bold text-center text-cyan-400 mt-6">
-                    ₹2,999
+                <!-- Heading -->
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                    What Our <span class="text-cyan-400">Members Say</span>
                 </h2>
 
-                <p class="text-center text-gray-400 mb-8">
-                    Per Month
-                </p>
+                <!-- Review Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <ul class="space-y-4 text-gray-300">
+                    <!-- Review 1 -->
+                    <div
+                        class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
 
-                    <li>✔ Everything in Pro</li>
-                    <li>✔ Unlimited Classes</li>
-                    <li>✔ 24×7 Gym Access</li>
-                    <li>✔ Body Composition Analysis</li>
-                    <li>✔ VIP Support</li>
-                    <li>✔ Supplement Guidance</li>
+                        <div class="flex justify-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
+                        </div>
 
-                </ul>
+                        <h3 class="text-2xl font-bold text-center mt-5">
+                            Rahul Sharma
+                        </h3>
 
-                <button
-                    class="w-full mt-10 bg-red-600 hover:bg-red-700 rounded-full py-4 font-semibold flex items-center justify-center gap-2 transition hover:scale-105">
+                        <div class="text-yellow-400 text-center text-xl mt-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
 
-                    Join Now
-                    <span>→</span>
+                        <p class="text-gray-400 text-center mt-5 leading-7">
+                            Joining Royal Gym was the best decision I've made. The trainers
+                            are supportive, and the equipment is excellent. I've lost 12 kg
+                            in just four months.
+                        </p>
 
-                </button>
+                    </div>
 
-            </div>
+                    <!-- Review 2 -->
+                    <div
+                        class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
 
-        </div>
+                        <div class="flex justify-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
+                        </div>
 
-    </div>
+                        <h3 class="text-2xl font-bold text-center mt-5">
+                            Priya Verma
+                        </h3>
 
-</section>
-<!-- Reviews Section -->
-<section class="bg-black text-white py-20">
+                        <div class="text-yellow-400 text-center text-xl mt-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
 
-    <div class="max-w-7xl mx-auto px-6">
+                        <p class="text-gray-400 text-center mt-5 leading-7">
+                            The personalized workout plans and friendly environment helped
+                            me gain confidence and improve my fitness level every week.
+                        </p>
 
-        <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-            What Our <span class="text-cyan-400">Members Say</span>
-        </h2>
+                    </div>
 
-        <!-- Review Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review 3 -->
+                    <div
+                        class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
 
-            <!-- Review 1 -->
-            <div class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
+                        <div class="flex justify-center">
+                            <img src="https://randomuser.me/api/portraits/men/76.jpg"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
+                        </div>
 
-                <div class="flex justify-center">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                        class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
-                </div>
+                        <h3 class="text-2xl font-bold text-center mt-5">
+                            Aman Singh
+                        </h3>
 
-                <h3 class="text-2xl font-bold text-center mt-5">
-                    Rahul Sharma
-                </h3>
+                        <div class="text-yellow-400 text-center text-xl mt-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
 
-                <div class="text-yellow-400 text-center text-xl mt-2">
-                    ⭐⭐⭐⭐⭐
-                </div>
+                        <p class="text-gray-400 text-center mt-5 leading-7">
+                            The trainers are professional, and the atmosphere keeps me
+                            motivated. I highly recommend Royal Gym to anyone serious about
+                            fitness.
+                        </p>
 
-                <p class="text-gray-400 text-center mt-5 leading-7">
-                    Joining Royal Gym was the best decision I've made. The trainers
-                    are supportive, and the equipment is excellent. I've lost 12 kg
-                    in just four months.
-                </p>
-
-            </div>
-
-            <!-- Review 2 -->
-            <div class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
-
-                <div class="flex justify-center">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                        class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
-                </div>
-
-                <h3 class="text-2xl font-bold text-center mt-5">
-                    Priya Verma
-                </h3>
-
-                <div class="text-yellow-400 text-center text-xl mt-2">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <p class="text-gray-400 text-center mt-5 leading-7">
-                    The personalized workout plans and friendly environment helped
-                    me gain confidence and improve my fitness level every week.
-                </p>
-
-            </div>
-
-            <!-- Review 3 -->
-            <div class="border border-gray-700 rounded-3xl p-8 bg-zinc-900 hover:border-cyan-400 transition duration-300">
-
-                <div class="flex justify-center">
-                    <img src="https://randomuser.me/api/portraits/men/76.jpg"
-                        class="w-24 h-24 rounded-full object-cover border-4 border-cyan-400">
-                </div>
-
-                <h3 class="text-2xl font-bold text-center mt-5">
-                    Aman Singh
-                </h3>
-
-                <div class="text-yellow-400 text-center text-xl mt-2">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <p class="text-gray-400 text-center mt-5 leading-7">
-                    The trainers are professional, and the atmosphere keeps me
-                    motivated. I highly recommend Royal Gym to anyone serious about
-                    fitness.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<footer class="bg-zinc-950 border-t border-gray-800 text-white">
-
-    <div class="max-w-7xl mx-auto px-6 py-12">
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-            <!-- Logo -->
-            <div>
-                <h2 class="text-3xl font-bold">
-                    Royal <span class="text-cyan-400">Gym</span>
-                </h2>
-
-                <p class="text-gray-400 mt-4 leading-7">
-                    Build strength, improve health, and transform your lifestyle
-                    with expert trainers and world-class equipment.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">
-                    Quick Links
-                </h3>
-
-                <ul class="space-y-3 text-gray-400">
-                    <li><a href="#" class="hover:text-cyan-400">Home</a></li>
-                    <li><a href="#" class="hover:text-cyan-400">Services</a></li>
-                    <li><a href="#" class="hover:text-cyan-400">Plans</a></li>
-                    <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">
-                    Contact
-                </h3>
-
-                <p class="text-gray-400">
-                    📍 Muzaffarpur, Bihar
-                </p>
-
-                <p class="text-gray-400 mt-2">
-                    📞 +91 98765 43210
-                </p>
-
-                <div class="flex gap-5 mt-6 text-2xl">
-
-                    <a href="#" class="hover:text-cyan-400">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" class="hover:text-cyan-400">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" class="hover:text-cyan-400">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="#" class="hover:text-cyan-400">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
+        <footer class="bg-zinc-950 border-t border-gray-800 text-white">
 
-        <!-- Bottom -->
-        <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+            <div class="max-w-7xl mx-auto px-6 py-12">
 
-            © 2026 Royal Gym Fitness. All Rights Reserved.
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        </div>
+                    <!-- Logo -->
+                    <div>
+                        <h2 class="text-3xl font-bold">
+                            Royal <span class="text-cyan-400">Gym</span>
+                        </h2>
 
-    </div>
+                        <p class="text-gray-400 mt-4 leading-7">
+                            Build strength, improve health, and transform your lifestyle
+                            with expert trainers and world-class equipment.
+                        </p>
+                    </div>
 
-</footer>
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Quick Links
+                        </h3>
+
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="#" class="hover:text-cyan-400">Home</a></li>
+                            <li><a href="#" class="hover:text-cyan-400">Services</a></li>
+                            <li><a href="#" class="hover:text-cyan-400">Plans</a></li>
+                            <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Contact
+                        </h3>
+
+                        <p class="text-gray-400">
+                            📍 Muzaffarpur, Bihar
+                        </p>
+
+                        <p class="text-gray-400 mt-2">
+                            📞 +91 98765 43210
+                        </p>
+
+                        <div class="flex gap-5 mt-6 text-2xl">
+
+                            <a href="#" class="hover:text-cyan-400">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" class="hover:text-cyan-400">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" class="hover:text-cyan-400">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href="#" class="hover:text-cyan-400">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+
+                    © 2026 Royal Gym Fitness. All Rights Reserved.
+
+                </div>
+
+            </div>
+
+        </footer>
 
     </main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
